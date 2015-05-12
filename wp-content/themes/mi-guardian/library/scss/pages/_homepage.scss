@@ -1,0 +1,50 @@
+
+.heroVid{
+	background: $csblue;
+	width: 100%;
+	height: 500px;
+}
+
+
+.introPanel{
+	background: $clgrey;
+	text-align: center;
+	padding: 1rem 0;
+	
+	.thinkTitle{
+		text-transform: uppercase;
+	}
+	
+	h3{
+		font-size: 1.2rem;
+	}
+}
+
+.signUp{
+	
+}
+
+.threeThink{
+	background: $cturq;
+}
+
+.pageFooter{
+	background: $clgrey;
+}
+
+
+@media only screen and (min-width: 640px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+	
+}
+
+@media only screen and (min-width: 1030px) {
+	
+}
+
+@media only screen and (min-width: 1240px) {
+	
+}
