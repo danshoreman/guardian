@@ -41,7 +41,7 @@
 			<div class="small-12 medium-6 columns">
 				<div class="contactDetails">
 					<p>Don’t just think about it<br>
-						call us now <span class="">0800 130 0011</span></p>
+						call us now <span class="heavy">0800 130 0011</span></p>
 				</div>
 			</div>
 		</div>

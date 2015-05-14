@@ -1,7 +1,7 @@
 	<footer class="pageFooter">
 		<div class="row">
 			<div class="small-12 medium-6 columns">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/mi-guardian-logo.svg" class="footer-logo" alt="">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/mi-guardian-logo.svg" class="footerLogo" alt="">
 			</div>
 			<div class="small-12 medium-6 columns">
 				<p>For further information<br>

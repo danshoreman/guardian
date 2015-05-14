@@ -1,50 +1,329 @@
 
 .heroVid{
-	background: $csblue;
 	width: 100%;
-	height: 500px;
+	height: 280px;
+	padding-top: 1rem;
+	background: url(../images/homepage/geoff.png) 80px bottom no-repeat $csblue;
+	@include back-size(contain);
+	
+	.meet{
+		color: $cblue;
+		font-family: $bebas;
+		line-height: 1;
+		border-bottom: 5px solid $white;
+		display: inline-block;
+		font-size: 2rem;
+		margin: 0 0 1rem 0;
+	}
+	
+	.learn{
+		margin: 0;
+		width: 50%;
+		color: $white;
+		font-family: $bebas;
+		font-size: 1.3rem;
+		line-height: 1;
+	}
 }
-
 
 .introPanel{
 	background: $clgrey;
 	text-align: center;
-	padding: 1rem 0;
+	padding: 2rem 0;
 	
-	.thinkTitle{
-		text-transform: uppercase;
-	}
+	.thinkText{
 	
-	h3{
-		font-size: 1.2rem;
+		.thinkTitle{
+			text-transform: uppercase;
+			font-family: $bebas;
+			color: $cblue;
+		}
+		
+		h3{
+			font-size: 1.2rem;
+			margin-bottom: 2rem;
+		}
 	}
 }
 
 .signUp{
+	text-align: center;
+	padding: 2rem 0;
 	
+	h4{
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
+	}
+	
+	#signupForm{
+		
+		.inputWrap{
+			width: 50%;
+			float: left;
+			text-align: left;
+			margin-bottom: 1rem;
+			
+			.input{
+				width: 100%;
+			}
+		}
+		
+		.submitBtn{
+			width: 100%;
+		}
+	}
 }
 
 .threeThink{
 	background: $cturq;
+	position: relative;
+	padding: 2rem 0;
+	
+	.thinkContent{
+		width: 220px;
+		margin: 0 auto 2rem auto;
+	
+		p{
+			font-family: $bebas;
+			color: $white;
+			display: inline-block;
+			margin: 0;
+			text-align: left;
+			border-bottom: 5px solid $white;
+			padding-bottom: 0.5rem;
+			
+			.dark{
+				color: darken($cturq, 20%);
+			}
+		}
+		
+		.threeIcon{
+			width: 100px;
+			height: auto;
+			display: inline-block;
+			float: right;
+			margin-top: 0.5rem;
+		}
+		
+		&:after{
+			@include clearfix;
+		}
+	}
+	
+	.roundel{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 200px;
+		height: 200px;
+		background: $white;
+		text-align: center;
+		@include border-radius(100px);
+		display: none;
+	}
 }
 
-.pageFooter{
-	background: $clgrey;
+.fourThink{
+	padding: 2rem 0;
+	text-align: center;
+	
+	h5{
+		margin-bottom: 2rem;
+	}
+}
+
+
+@media only screen and (min-width: 485px) {
+	.heroVid{
+		background-position: right bottom;
+	}
 }
 
 
 @media only screen and (min-width: 640px) {
 
+	.heroVid{
+		height: 350px;
+		padding-left: 1rem;
+		
+		.meet{
+			font-size: 3.2rem;
+			margin: 1rem 0;
+		}
+		
+		.learn{
+			font-size: 1.6rem;
+			width: 45%;
+		}
+	}
+	
+	.threeThink{
+		
+		.thinkContent{
+			width: 100%;
+			margin: 0;
+		
+			p{
+				font-size: 1.2rem;
+				line-height: 1;
+			}
+			
+			.threeIcon{
+				width: 70px;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 768px) {
 	
+	.heroVid{
+		height: 500px;
+		
+		.meet{
+			font-size: 3.4rem;
+			margin: 1rem 0;
+		}
+		
+		.learn{
+			font-size: 2.2rem;
+			width: 40%;
+		}
+	}
+	
+	.introPanel{
+		padding: 4rem 0;
+		
+		.thinkText{
+			max-width: 800px;
+			margin: 0 auto;
+			
+			.thinkTitle{
+				font-size: 3rem;
+			}
+			
+			h3{
+				font-size: 1.5rem;
+			}
+		}
+	}
+	
+	.threeThink{
+		
+		.thinkContent{
+			width: 300px;
+			margin: 0 auto;
+			
+			p{
+				font-size: 1.6rem;
+				line-height: 1;
+			}
+			
+			.threeIcon{
+				width: 110px;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 1030px) {
+
+	.heroVid{
+		height: 600px;
+		
+		.meet{
+			font-size: 4rem;
+			margin: 1rem 0;
+		}
+		
+		.learn{
+			font-size: 3.2rem;
+			width: 38%;
+		}
+	}
 	
+	.introPanel{
+		padding: 3rem 0;
+		
+		.thinkTitle{
+		}
+		
+		h3{
+			font-size: 1.2rem;
+			margin-bottom: 3rem;
+		}
+	}
+	
+	.signUp{
+		text-align: center;
+		padding: 3rem 0;
+		
+		h4{
+			font-size: 1.2rem;
+			margin-bottom: 3rem;
+		}
+		
+		#signupForm{
+			
+			.inputWrap{
+				width: 50%;
+				float: left;
+				text-align: left;
+				margin-bottom: 1rem;
+				
+				.input{
+					width: 100%;
+				}
+			}
+			
+			.submitBtn{
+				width: 100%;
+			}
+		}
+	}
+	
+	.threeThink{
+		padding: 4rem 0;
+		
+		.thinkContent{
+			width: 300px;
+			margin: 0 auto;
+			
+			p{
+				font-size: 1.6rem;
+				line-height: 1;
+			}
+			
+			.threeIcon{
+				width: 110px;
+			}
+		}
+	}
+	
+	.fourThink{
+		padding: 3rem 0;
+		text-align: center;
+		
+		h5{
+			margin-bottom: 3rem;
+		}
+	}	
 }
 
 @media only screen and (min-width: 1240px) {
-	
+
+	.heroVid{
+		padding-left: 5rem;
+		padding-top: 3rem;
+		
+		.meet{
+			font-size: 4rem;
+			margin: 1rem 0;
+		}
+		
+		.learn{
+			font-size: 3.2rem;
+			width: 38%;
+		}
+	}
 }

@@ -1,24 +1,41 @@
 
 .pageHeader{
-	padding-top: 1rem;
+	padding: 1rem 0;
 	text-align: center;
-	background: $clgrey;
 	
 	.logoWrap{
 		
 		.mainLogo{
-			width: 220px;
+			width: 150px;
 			height: auto;
 		}
 	}
 	
 	.contactDetails{
 		
+		p{
+			margin: 0.5rem 0 0 0;
+			
+			.heavy{
+				font-family: $barbold;
+			}
+		}
 	}	
 }
 
 @media only screen and (min-width: 640px) {
 
+	.pageHeader{
+	
+		.logoWrap{
+			text-align: left;
+		}
+		
+		.contactDetails{
+			float: right;
+			text-align: left;
+		}
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -39,7 +56,15 @@
 			float: right;
 			font-size: 1.2rem;
 			text-align: left;
-		}	
+			
+			p{
+				line-height: 1.2;
+			}
+		}
+		
+		&:after{
+			@include clearfix;
+		}
 	}	
 }
 
