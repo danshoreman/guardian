@@ -42,6 +42,11 @@
 		h3{
 			font-size: 1.2rem;
 			margin-bottom: 2rem;
+			line-height: 1.2;
+		}
+		
+		p{
+			color: darken($cturq, 20%);
 		}
 	}
 }
@@ -52,29 +57,47 @@
 	
 	h4{
 		font-size: 1.1rem;
-		margin-bottom: 2rem;
 	}
 	
-	#signupForm{
+	#mc-embedded-subscribe-form{
 		
 		.inputWrap{
-			width: 50%;
+			width: 46%;
+			margin: 0 2%;
 			float: left;
 			text-align: left;
 			margin-bottom: 1rem;
 			
 			.input{
 				width: 100%;
+				border: none;
+				background: #e5f6f5;
+				font-family: $barreg;
+			font-size: 1.2rem;
 			}
 		}
 		
+		.indicates-required{
+			font-size: 0.8rem;
+		}
+		
 		.submitBtn{
-			width: 100%;
+			width: 96%;
+			margin: 0 2%;
+			background: $cyell;
+			border: none;
+			font-family: $barreg;
+			font-size: 1.2rem;
+			cursor: pointer;
+			
+			&:hover{
+				background: darken($cyell, 5%);
+			}
 		}
 	}
 }
 
-.threeThink{
+.thinkBlock{
 	background: $cturq;
 	position: relative;
 	padding: 2rem 0;
@@ -123,17 +146,39 @@
 	}
 }
 
-.fourThink{
+.dealBlock{
 	padding: 2rem 0;
 	text-align: center;
 	
-	h5{
+	.title{
 		margin-bottom: 2rem;
+		font-family: $bebas;
+		color: $cturq;
+		line-height: 1;
+		font-size: 1.6rem;
+	}
+	
+	.dealIcon{
+		height: 130px;
+		display: table;
+		width: 100%;
+		
+		img{
+			width: 110px;
+			height: auto;
+			margin: 0 auto;
+		}
+	}
+	
+	p{
+		font-family: $barbold;
+		margin: 0 0 1rem 0;
 	}
 }
 
 
 @media only screen and (min-width: 485px) {
+	
 	.heroVid{
 		background-position: right bottom;
 	}
@@ -157,7 +202,7 @@
 		}
 	}
 	
-	.threeThink{
+	.thinkBlock{
 		
 		.thinkContent{
 			width: 100%;
@@ -200,27 +245,96 @@
 			
 			.thinkTitle{
 				font-size: 3rem;
+				margin-bottom: 1rem;
 			}
 			
 			h3{
 				font-size: 1.5rem;
 			}
+			
+			p{
+				font-size: 1.2rem;
+			}
 		}
 	}
 	
-	.threeThink{
+	.signUp{
+		
+		#mc-embedded-subscribe-form{
+			width: 550px;
+			margin: 0 auto;
+						
+			.inputWrap{
+				width: 40%;
+				margin: 0 1%;
+				height: 50px;
+				
+				label{
+					height: 20px;
+					margin-bottom: 5px;
+				}
+				
+				.input{
+					
+				}
+			}
+			
+			.indicates-required{
+				font-size: 0.8rem;
+			}
+			
+			.submitBtn{
+				width: 16%;
+				float: left;
+				height: 50px;
+				margin: 25px 0 0 0;
+				border: none;
+				
+				&:hover{
+					
+				}
+			}
+		}
+	}
+	
+	.thinkBlock{
 		
 		.thinkContent{
-			width: 300px;
+			//width: 300px;
 			margin: 0 auto;
 			
 			p{
-				font-size: 1.6rem;
+				font-size: 1.5rem;
 				line-height: 1;
 			}
 			
 			.threeIcon{
-				width: 110px;
+				width: 85px;
+			}
+		}
+	}
+	
+	.dealBlock{
+		padding: 3rem 0;
+		
+		.dealInner{
+			max-width: 950px;
+			margin: 0 auto;
+			
+			.title{
+				font-size: 1.8rem;
+			}
+			
+			.dealIcon{
+				height: 155px;
+				
+				img{
+					width: 130px;
+				}
+			}
+			
+			p{
+				font-size: 1.4rem;
 			}
 		}
 	}
@@ -245,44 +359,38 @@
 	.introPanel{
 		padding: 3rem 0;
 		
-		.thinkTitle{
-		}
+		.thinkText{
 		
-		h3{
-			font-size: 1.2rem;
-			margin-bottom: 3rem;
+			.thinkTitle{
+				font-size: 3.4rem;
+			}
+			
+			h3{
+			}
 		}
 	}
 	
 	.signUp{
 		text-align: center;
-		padding: 3rem 0;
+		padding: 5rem 0;
 		
 		h4{
-			font-size: 1.2rem;
-			margin-bottom: 3rem;
+			font-size: 2rem;
+			line-height: 1;
+			//margin-bottom: 3rem;
 		}
 		
-		#signupForm{
+		.indicates-required{
+			margin-bottom: 1rem;
+		}
+		
+		#mc-embedded-subscribe-form{
 			
-			.inputWrap{
-				width: 50%;
-				float: left;
-				text-align: left;
-				margin-bottom: 1rem;
-				
-				.input{
-					width: 100%;
-				}
-			}
 			
-			.submitBtn{
-				width: 100%;
-			}
 		}
 	}
 	
-	.threeThink{
+	.thinkBlock{
 		padding: 4rem 0;
 		
 		.thinkContent{
@@ -295,17 +403,21 @@
 			}
 			
 			.threeIcon{
-				width: 110px;
+				width: 130px;
 			}
 		}
 	}
 	
-	.fourThink{
-		padding: 3rem 0;
+	.dealBlock{
+		padding: 5rem 0;
 		text-align: center;
 		
-		h5{
-			margin-bottom: 3rem;
+		.dealInner{
+			
+			.title{
+				font-size: 2.6rem;
+				margin-bottom: 3rem;
+			}
 		}
 	}	
 }

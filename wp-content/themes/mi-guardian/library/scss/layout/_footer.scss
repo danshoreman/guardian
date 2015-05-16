@@ -1,20 +1,72 @@
 
 .pageFooter{
 	background: $clgrey;
-	padding: 2rem 0;
+	padding: 1rem 0;
 	
-	.footerLogo{
-		width: 200px;
-		height: auto;
+	.footerInner{
+		//background: aqua;
+		text-align: center;
+		
+		.footerLogo{
+			width: 200px;
+			height: auto;
+		}
+		
+		.contacts{
+			border-top: 1px dotted darken($clgrey, 20%);
+			padding-top: 1rem;
+			
+			.heavy{
+				font-family: $barbold;
+			}
+		}
 	}
 }
 
 @media only screen and (min-width: 640px) {
 
+	.pageFooter{
+		padding: 2rem 0;
+		
+		.footerInner{
+			max-width: 500px;
+			margin: 0 auto;
+			
+			.footerLogo{
+				width: 200px;
+				height: auto;
+			}
+			
+			.contacts{
+				border-left: 1px solid darken($clgrey, 30%);
+				border-top: none;
+				padding-top: 0;
+				margin: 0.5rem 0 0 0;
+				text-align: left;
+				padding-left: 35px;
+				font-size: 1.2rem;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 768px) {
-	
+
+	.pageFooter{
+		
+		.footerInner{
+			max-width: 650px;
+			
+			.footerLogo{
+				width: 250px;
+				height: auto;
+			}
+			
+			.contacts{
+				font-size: 1.8rem;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 1030px) {
