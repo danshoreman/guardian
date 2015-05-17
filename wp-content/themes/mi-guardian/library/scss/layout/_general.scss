@@ -29,6 +29,10 @@ a img{
 LAYOUT & GRID STYLES
 *********************/
 
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
 p{
 	line-height: 1.3;
 }

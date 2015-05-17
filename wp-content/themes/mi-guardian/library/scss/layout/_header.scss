@@ -1,6 +1,6 @@
 
 .pageHeader{
-	padding: 1rem 0;
+	padding: 0.5rem 0;
 	text-align: center;
 	
 	.logoWrap{
@@ -69,7 +69,21 @@
 }
 
 @media only screen and (min-width: 1030px) {
-	
+
+	.pageHeader{
+		
+		.contactDetails{
+			font-size: 1.5rem;
+			
+			p{
+				line-height: 1.1;
+			}
+		}
+		
+		&:after{
+			@include clearfix;
+		}
+	}
 }
 
 @media only screen and (min-width: 1240px) {

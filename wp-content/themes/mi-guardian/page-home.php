@@ -2,33 +2,12 @@
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
-	<!--
-<div class="row">
-		<div class="small-12 columns" role="main">
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
-				<header class="article-header">
-					<h2>
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-					</h2>
-				</header>
-				<section class="entry-content">
-					<?php if ( has_post_thumbnail()) : ?>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-							<?php the_post_thumbnail(); ?>
-						</a>
-					<?php endif; ?>
-				</section>
-			</article>
-		</div>
-	</div>
--->
 	<section class="heroVid">
 		<div class="row">
 			<div class="small-12 columns">
-				<p class="meet">MEET<br>
-				GEOFF...</p>
-				<p class="learn">Learn how he and his family acheived peace of mind with their telecare service from just £3.50 a week.</p>
-				<a href="">Play Video</a>
+				<?php the_field('video_text'); ?>
+				<a href="<?php the_field('video_link'); ?>" class="playBtn fancybox-media"><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/homepage/playVideo.png" class="" alt="">
+				Play Video</a>
 			</div>
 		</div>
 	</section>
@@ -36,7 +15,6 @@
 		<div class="row">
 			<div class="small-12 columns">
 				<div class="thinkText">
-					<h2 class="thinkTitle">Think!</h2>
 					<?php the_content(); ?>
 				</div>
 			</div>
@@ -99,37 +77,49 @@
 		<div class="row">
 			<div class="small-12 medium-4 columns">
 				<div class="thinkContent">
-					<p><span class="dark">THINK...</span><br>
+					<?php the_field('think_block_01'); ?>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/specialist-gps.png" class="threeIcon" alt="">
+					<!--
+<p><span class="dark">THINK...</span><br>
 						Who is the<br>
 						only service<br>
 						monitored by<br>
 						a team of<br>
 						specialist gps
 					</p>
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/specialist-gps.svg" class="threeIcon" alt="">
+					
+-->
 				</div>
 			</div>
 			<div class="small-12 medium-4 columns">
 				<div class="thinkContent">
-					<p><span class="dark">THINK...</span><br>
+					<?php the_field('think_block_02'); ?>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/24hour-support.png" class="threeIcon" alt="">
+					<!--
+<p><span class="dark">THINK...</span><br>
 						How great it<br>
 						would be to<br>
 						know you have<br>
 						24hr support<br>
 						365 days a year
 					</p>
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/24hour-support.svg" class="threeIcon" alt="">
+					
+-->
 				</div>
 			</div>
 			<div class="small-12 medium-4 columns">
 				<div class="thinkContent">
-					<p><span class="dark">THINK...</span><br>
+					<?php the_field('think_block_03'); ?>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/award-winning.png" class="threeIcon" alt="">
+					<!--
+<p><span class="dark">THINK...</span><br>
 						Which award<br>
 						winning telecare<br>
 						service is also<br>
 						the cheapest
 					</p>
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/award-winning.svg" class="threeIcon" alt="">
+					
+-->
 				</div>
 			</div>
 		</div>
@@ -142,33 +132,33 @@
 		<div class="dealInner">
 			<div class="row">
 				<div class="small-12 columns">
-					<h5 class="title">FROM ONLY 50P A DAY.<br>IT REALLY IS A DEAL WORTH THINKING ABOUT</h5>
+					<?php the_field('deal_introduction'); ?>
 				</div>
 			</div>
 			<div class="row">
 				<div class="small-6 medium-3 columns">
 					<div class="dealIcon">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/portable-alarm.svg" class="" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/portable-alarm.png" class="" alt="">
 					</div>
-					<p>Portable <br>Alarm</p>
+					<p><?php the_field('deal_block_01'); ?></p>
 				</div>
 				<div class="small-6 medium-3 columns">
 					<div class="dealIcon">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/home-installation.svg" class="" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/home-installation.png" class="" alt="">
 					</div>
-					<p>Home system <br>installation</p>
+					<p><?php the_field('deal_block_02'); ?></p>
 				</div>
 				<div class="small-6 medium-3 columns">
 					<div class="dealIcon">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/call-centre.svg" class="" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/call-centre.png" class="" alt="">
 					</div>
-					<p>24 hour <br>call centre</p>
+					<p><?php the_field('deal_block_03'); ?></p>
 				</div>
 				<div class="small-6 medium-3 columns">
 					<div class="dealIcon">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/gp-monitoring.svg" class="" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/gp-monitoring.png" class="" alt="">
 					</div>
-					<p>GP-led <br>monitoring team</p>
+					<p><?php the_field('deal_block_04'); ?></p>
 				</div>
 			</div>
 		</div>

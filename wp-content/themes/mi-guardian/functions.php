@@ -48,6 +48,16 @@ function arphabet_widgets_init() {
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
 
+// custom homepage title tag
+add_filter( 'wp_title', 'baw_hack_wp_title_for_home' );
+function baw_hack_wp_title_for_home( $title )
+{
+  if( empty( $title ) && ( is_home() || is_front_page() ) ) {
+    return __( 'Mi Guardian' ) . ' | ' . get_bloginfo( 'description' );
+  }
+  return $title;
+}
+
 
 // Change default excerpt
 function new_excerpt_more( $more ) {
