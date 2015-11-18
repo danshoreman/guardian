@@ -25,8 +25,6 @@
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-
-
 <!--[if lt IE 9]>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.js"></script>
    <script>

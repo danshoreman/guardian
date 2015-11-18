@@ -28,7 +28,7 @@
 		width: 45%;
 		color: $white;
 		font-family: $bebas;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		line-height: 0.9;
 	}
 	
@@ -140,6 +140,7 @@
 			text-align: left;
 			border-bottom: 5px solid $white;
 			padding-bottom: 0.5rem;
+			float: left;
 			
 			.dark{
 				color: darken($cturq, 20%);
@@ -160,15 +161,29 @@
 	}
 	
 	.roundel{
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		width: 200px;
-		height: 200px;
-		background: $white;
+		position: relative;
+		left: 50%;
+		width: 140px;
+		height: 140px;
+		margin-left: -70px;
+		padding-top: 25px;
+		background: #fff100;
 		text-align: center;
 		@include border-radius(100px);
-		display: none;
+		
+		p{
+			color: $cturq;
+			text-transform: uppercase;
+			margin: 0;
+			font-size: 12px;
+			line-height: 1;
+			
+			&.large{
+				font-size: 23px;
+				 
+				font-family: $barbold;
+			}
+		}
 	}
 }
 
@@ -200,6 +215,11 @@
 		font-family: $barbold;
 		margin: 0 0 1rem 0;
 	}
+}
+
+.page-tcs{
+	background: #eaeaea;
+	padding: 4rem 0;
 }
 
 
@@ -242,6 +262,10 @@
 			.threeIcon{
 				width: 70px;
 			}
+		}
+		
+		.roundel{
+			margin-top: 10px;
 		}
 	}
 }
@@ -324,9 +348,9 @@
 	}
 	
 	.thinkBlock{
+		padding: 4rem 0;
 		
 		.thinkContent{
-			//width: 300px;
 			margin: 0 auto;
 			
 			p{
@@ -337,6 +361,13 @@
 			.threeIcon{
 				width: 85px;
 			}
+		}
+		
+		.roundel{
+			position: absolute;
+			left: inherit;
+			right: 70px;
+			bottom: -70px;
 		}
 	}
 	
@@ -434,7 +465,7 @@
 	}
 	
 	.thinkBlock{
-		padding: 4rem 0;
+		padding: 5rem 0;
 		
 		.thinkContent{
 			width: 300px;
@@ -447,6 +478,22 @@
 			
 			.threeIcon{
 				width: 130px;
+			}
+		}
+		
+		.roundel{
+			right: 10%;
+			bottom: -110px;
+			width: 200px;
+			height: 200px;
+			padding-top: 40px;
+			
+			p{
+				font-size: 16px;
+					
+				&.large{
+					font-size: 30px;
+				}
 			}
 		}
 	}

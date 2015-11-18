@@ -23,26 +23,6 @@
 	<section class="signUp">
 		<div class="row">
 			<div class="small-12 columns">
-				<!--
-<h4>Sign up for all the latest news and offers</h4>
-				<form id="signupForm" method="">
-					<fieldset class="">
-						
-						<div class="inputWrap">
-							<label for="name">Name</label>
-							<input class="name input" type="text" placeholder="Name">
-						</div>
-						
-						<div class="inputWrap">
-							<label for="email">Email Address</label>
-							<input class="email input" type="text" placeholder="Email Address">
-						</div>
-						
-						<input  type="submit" value="Send" class="submitBtn">
-					</fieldset>
-				</form>
--->
-				
 				<!-- Begin MailChimp Signup Form -->
 				<div id="mc_embed_signup">
 				<form action="//wearevast.us5.list-manage.com/subscribe/post?u=16dec5b34f91bdc514cd89088&amp;id=36e7aedb99" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -79,53 +59,24 @@
 				<div class="thinkContent">
 					<?php the_field('think_block_01'); ?>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/specialist-gps.png" class="threeIcon" alt="">
-					<!--
-<p><span class="dark">THINK...</span><br>
-						Who is the<br>
-						only service<br>
-						monitored by<br>
-						a team of<br>
-						specialist gps
-					</p>
-					
--->
 				</div>
 			</div>
 			<div class="small-12 medium-4 columns">
 				<div class="thinkContent">
 					<?php the_field('think_block_02'); ?>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/24hour-support.png" class="threeIcon" alt="">
-					<!--
-<p><span class="dark">THINK...</span><br>
-						How great it<br>
-						would be to<br>
-						know you have<br>
-						24hr support<br>
-						365 days a year
-					</p>
-					
--->
 				</div>
 			</div>
 			<div class="small-12 medium-4 columns">
 				<div class="thinkContent">
 					<?php the_field('think_block_03'); ?>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/icons/award-winning.png" class="threeIcon" alt="">
-					<!--
-<p><span class="dark">THINK...</span><br>
-						Which award<br>
-						winning telecare<br>
-						service is also<br>
-						the cheapest
-					</p>
-					
--->
 				</div>
 			</div>
 		</div>
 		<div class="roundel">
-			<p>Want to have a think about it?</p>
-			<p class="large">Free 8 week trial</p>
+			<p>Want to have a <br>think about it?</p>
+			<p class="large">Free<br>8 week<br>trial</p>
 		</div>
 	</section>
 	<section class="dealBlock">
